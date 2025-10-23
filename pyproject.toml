@@ -1,0 +1,27 @@
+[project]
+name = "populate_voyage"
+version = "0.1.0"
+description = "Excel-driven Supabase → PySpark pipeline with Jupyter"
+readme = "README.md"
+requires-python = ">=3.10"
+
+# Core + your earlier requirements.txt + Jupyter + dotenv
+dependencies = [
+  "ipykernel",
+  "jupyter", # or "notebook" / "jupyterlab" if you prefer
+  "numpy",
+  "pandas>=2.1.0",
+  "matplotlib",
+  # From our pipeline
+  "pyspark>=3.5.0",
+  "psycopg[binary]>=3.1.18",
+  "openpyxl>=3.1.2",
+  "xlwings>=0.30.16",
+  # .env support
+  "python-dotenv>=1.0.0",
+  "supabase>=2.22.1",
+]
+
+[tool.uv]
+# Keep a local, managed venv (recommended)
+managed = true
