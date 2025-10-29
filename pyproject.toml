@@ -22,6 +22,10 @@ dependencies = [
   "supabase>=2.4.0",
   "azure-identity>=1.25.1",
   "azure-keyvault-secrets>=4.10.0",
+  "nbconvert>=7.16.6",
+  "jupyter-core>=5.9.1",
+  "jupyter-client>=8.6.3",
+  "traitlets>=5.14.3",
 ]
 
 [tool.uv]

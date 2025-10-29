@@ -1,0 +1,171 @@
+2025-10-29 13:38:29 | INFO     | azure.identity._credentials.environment | No environment configuration found.
+2025-10-29 13:38:29 | INFO     | azure.identity._credentials.managed_identity | ManagedIdentityCredential will use IMDS
+2025-10-29 13:38:29 | INFO     | azure.core.pipeline.policies.http_logging_policy | Request URL: 'https://akv-1.vault.azure.net/secrets/supabase-service-role-key/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '1dde698a-b481-11f0-88f6-80b6558450bb'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.9 (Windows-11-10.0.26100-SP0)'
+No body was attached to the request
+2025-10-29 13:38:30 | INFO     | azure.core.pipeline.policies.http_logging_policy | Response status: 401
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-keyvault-region': 'eastus'
+    'x-ms-client-request-id': '1dde698a-b481-11f0-88f6-80b6558450bb'
+    'x-ms-request-id': '56509330-80da-42eb-b4c3-4c530a91a1c5'
+    'x-ms-keyvault-service-version': '1.9.2791.2'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=116.255.81.254;act_addr_fam=InterNetwork;'
+    'X-Content-Type-Options': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'WWW-Authenticate': 'Bearer authorization="https://login.microsoftonline.com/a470388c-9d94-48b7-955f-d1f648d022dc", resource="https://vault.azure.net"'
+    'Date': 'Wed, 29 Oct 2025 04:38:32 GMT'
+    'Content-Length': '97'
+2025-10-29 13:38:30 | INFO     | azure.core.pipeline.policies.http_logging_policy | Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=REDACTED&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.1 Python/3.12.9 (Windows-11-10.0.26100-SP0)'
+No body was attached to the request
+2025-10-29 13:38:32 | INFO     | azure.identity._credentials.chained | DefaultAzureCredential acquired a token from AzureCliCredential
+2025-10-29 13:38:32 | INFO     | azure.core.pipeline.policies.http_logging_policy | Request URL: 'https://akv-1.vault.azure.net/secrets/supabase-service-role-key/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '1dde698a-b481-11f0-88f6-80b6558450bb'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.9 (Windows-11-10.0.26100-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-29 13:38:33 | INFO     | azure.core.pipeline.policies.http_logging_policy | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-keyvault-region': 'eastus'
+    'x-ms-client-request-id': '1dde698a-b481-11f0-88f6-80b6558450bb'
+    'x-ms-request-id': '5d0e4e65-9133-4fa5-88e2-b11d3fba42dc'
+    'x-ms-keyvault-service-version': '1.9.2791.2'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=116.255.81.254;act_addr_fam=InterNetwork;'
+    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'Date': 'Wed, 29 Oct 2025 04:38:34 GMT'
+    'Content-Length': '495'
+2025-10-29 13:38:33 | INFO     | azure.core.pipeline.policies.http_logging_policy | Request URL: 'https://akv-1.vault.azure.net/secrets/supabase-url/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '200fda14-b481-11f0-8f41-80b6558450bb'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.9 (Windows-11-10.0.26100-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-29 13:38:33 | INFO     | azure.core.pipeline.policies.http_logging_policy | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-keyvault-region': 'eastus'
+    'x-ms-client-request-id': '200fda14-b481-11f0-8f41-80b6558450bb'
+    'x-ms-request-id': 'cb0430a6-f466-4c42-971b-540f697a6ddd'
+    'x-ms-keyvault-service-version': '1.9.2791.2'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=116.255.81.254;act_addr_fam=InterNetwork;'
+    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'Date': 'Wed, 29 Oct 2025 04:38:35 GMT'
+    'Content-Length': '303'
+2025-10-29 13:38:35 | INFO     | httpx | HTTP Request: GET https://bwbqsflrentugveslfyf.supabase.co/rest/v1/summary?select=voyage_id%2Cvoyage_date_voyagestart&voyage_id=eq.250626%2FGTR%2FBAL%2FHAR%2FSIN&limit=3 "HTTP/2 200 OK"
+2025-10-29 13:38:35 | INFO     | httpx | HTTP Request: GET https://bwbqsflrentugveslfyf.supabase.co/rest/v1/summary?select=voyage_date_voyagestart%2Cvoyage_id%2Cvoyage_duration_days%2Cvoyage_rate_usd_24hrgross%2Cvoyage_oh_usd%2Cvoyage_hac_usd%2Cvoyage_bcr_usd%2Cvoyage_cve_usd%2Cvoyage_bnkr_usd%2Cvoyage_bnkr_desc%2Cvoyage_chtr_usd_bal%2Cvoyage_expense_usd%2Cvoyage_expense_desc%2Cvoyage_bnkr_usd_deduc&voyage_date_voyagestart=gte.2025-07-03T00%3A00%3A00&voyage_date_voyagestart=lte.2025-07-10T00%3A00%3A00&voyage_id=eq.250626%2FGTR%2FBAL%2FHAR%2FSIN&order=voyage_date_voyagestart.desc.nullslast&offset=0&limit=2000 "HTTP/2 200 OK"
+2025-10-29 13:38:36 | INFO     | httpx | HTTP Request: GET https://bwbqsflrentugveslfyf.supabase.co/rest/v1/summary?select=voyage_date_voyagestart%2Cvoyage_id%2Cvoyage_duration_days%2Cvoyage_rate_usd_24hrgross%2Cvoyage_oh_usd%2Cvoyage_hac_usd%2Cvoyage_bcr_usd%2Cvoyage_cve_usd%2Cvoyage_bnkr_usd%2Cvoyage_bnkr_desc%2Cvoyage_chtr_usd_bal%2Cvoyage_expense_usd%2Cvoyage_expense_desc%2Cvoyage_bnkr_usd_deduc&voyage_date_voyagestart=gte.2025-08-12T00%3A00%3A00&voyage_date_voyagestart=lte.2025-08-17T00%3A00%3A00&voyage_id=eq.250810%2FGMA%2FBBA%2FLSH%2FBNS&order=voyage_date_voyagestart.desc.nullslast&offset=0&limit=2000 "HTTP/2 200 OK"
+2025-10-29 13:38:36 | INFO     | httpx | HTTP Request: GET https://bwbqsflrentugveslfyf.supabase.co/rest/v1/summary?select=voyage_date_voyagestart%2Cvoyage_id%2Cvoyage_duration_days%2Cvoyage_rate_usd_24hrgross%2Cvoyage_oh_usd%2Cvoyage_hac_usd%2Cvoyage_bcr_usd%2Cvoyage_cve_usd%2Cvoyage_bnkr_usd%2Cvoyage_bnkr_desc%2Cvoyage_chtr_usd_bal%2Cvoyage_expense_usd%2Cvoyage_expense_desc%2Cvoyage_bnkr_usd_deduc&voyage_date_voyagestart=gte.2025-10-04T00%3A00%3A00&voyage_date_voyagestart=lte.2025-10-08T00%3A00%3A00&voyage_id=eq.250810%2FGMA%2FBBA%2FLSH%2FBNS&order=voyage_date_voyagestart.desc.nullslast&offset=0&limit=2000 "HTTP/2 200 OK"
+2025-10-29 13:38:36 | INFO     | root | Work completed without errors.
+2025-10-29 13:38:36 | INFO     | root | === Application success ===
+2025-10-29 13:45:36 | INFO     | azure.identity._credentials.environment | No environment configuration found.
+2025-10-29 13:45:36 | INFO     | azure.identity._credentials.managed_identity | ManagedIdentityCredential will use IMDS
+2025-10-29 13:45:36 | INFO     | azure.core.pipeline.policies.http_logging_policy | Request URL: 'https://akv-1.vault.azure.net/secrets/supabase-service-role-key/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '1cafc3f6-b482-11f0-8afc-80b6558450bb'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.9 (Windows-11-10.0.26100-SP0)'
+No body was attached to the request
+2025-10-29 13:45:38 | INFO     | azure.core.pipeline.policies.http_logging_policy | Response status: 401
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-keyvault-region': 'eastus'
+    'x-ms-client-request-id': '1cafc3f6-b482-11f0-8afc-80b6558450bb'
+    'x-ms-request-id': 'dd87e0e1-e406-4ddb-a806-bc98e029e28b'
+    'x-ms-keyvault-service-version': '1.9.2791.2'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=116.255.81.254;act_addr_fam=InterNetwork;'
+    'X-Content-Type-Options': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'WWW-Authenticate': 'Bearer authorization="https://login.microsoftonline.com/a470388c-9d94-48b7-955f-d1f648d022dc", resource="https://vault.azure.net"'
+    'Date': 'Wed, 29 Oct 2025 04:45:39 GMT'
+    'Content-Length': '97'
+2025-10-29 13:45:38 | INFO     | azure.core.pipeline.policies.http_logging_policy | Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=REDACTED&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.1 Python/3.12.9 (Windows-11-10.0.26100-SP0)'
+No body was attached to the request
+2025-10-29 13:45:41 | INFO     | azure.identity._credentials.chained | DefaultAzureCredential acquired a token from AzureCliCredential
+2025-10-29 13:45:41 | INFO     | azure.core.pipeline.policies.http_logging_policy | Request URL: 'https://akv-1.vault.azure.net/secrets/supabase-service-role-key/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '1cafc3f6-b482-11f0-8afc-80b6558450bb'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.9 (Windows-11-10.0.26100-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-29 13:45:41 | INFO     | azure.core.pipeline.policies.http_logging_policy | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-keyvault-region': 'eastus'
+    'x-ms-client-request-id': '1cafc3f6-b482-11f0-8afc-80b6558450bb'
+    'x-ms-request-id': '5e448eea-2afc-494e-9f21-829a1d30d2e6'
+    'x-ms-keyvault-service-version': '1.9.2791.2'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=116.255.81.254;act_addr_fam=InterNetwork;'
+    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'Date': 'Wed, 29 Oct 2025 04:45:42 GMT'
+    'Content-Length': '495'
+2025-10-29 13:45:41 | INFO     | azure.core.pipeline.policies.http_logging_policy | Request URL: 'https://akv-1.vault.azure.net/secrets/supabase-url/?api-version=REDACTED'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '1f82cc56-b482-11f0-9f2e-80b6558450bb'
+    'User-Agent': 'azsdk-python-keyvault-secrets/4.10.0 Python/3.12.9 (Windows-11-10.0.26100-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2025-10-29 13:45:42 | INFO     | azure.core.pipeline.policies.http_logging_policy | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-keyvault-region': 'eastus'
+    'x-ms-client-request-id': '1f82cc56-b482-11f0-9f2e-80b6558450bb'
+    'x-ms-request-id': '41575e39-060b-49bc-bc54-ce3be4ed05f6'
+    'x-ms-keyvault-service-version': '1.9.2791.2'
+    'x-ms-keyvault-network-info': 'conn_type=Ipv4;addr=116.255.81.254;act_addr_fam=InterNetwork;'
+    'x-ms-keyvault-rbac-assignment-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'Date': 'Wed, 29 Oct 2025 04:45:43 GMT'
+    'Content-Length': '303'
+2025-10-29 13:45:43 | INFO     | httpx | HTTP Request: GET https://bwbqsflrentugveslfyf.supabase.co/rest/v1/summary?select=voyage_id%2Cvoyage_date_voyagestart&voyage_id=eq.250626%2FGTR%2FBAL%2FHAR%2FSIN&limit=3 "HTTP/2 200 OK"
+2025-10-29 13:45:44 | INFO     | httpx | HTTP Request: GET https://bwbqsflrentugveslfyf.supabase.co/rest/v1/summary?select=voyage_date_voyagestart%2Cvoyage_id%2Cvoyage_duration_days%2Cvoyage_rate_usd_24hrgross%2Cvoyage_oh_usd%2Cvoyage_hac_usd%2Cvoyage_bcr_usd%2Cvoyage_cve_usd%2Cvoyage_bnkr_usd%2Cvoyage_bnkr_desc%2Cvoyage_chtr_usd_bal%2Cvoyage_expense_usd%2Cvoyage_expense_desc%2Cvoyage_bnkr_usd_deduc&voyage_date_voyagestart=gte.2025-07-03T00%3A00%3A00&voyage_date_voyagestart=lte.2025-07-10T00%3A00%3A00&voyage_id=eq.250626%2FGTR%2FBAL%2FHAR%2FSIN&order=voyage_date_voyagestart.desc.nullslast&offset=0&limit=2000 "HTTP/2 200 OK"
+2025-10-29 13:45:45 | INFO     | httpx | HTTP Request: GET https://bwbqsflrentugveslfyf.supabase.co/rest/v1/summary?select=voyage_date_voyagestart%2Cvoyage_id%2Cvoyage_duration_days%2Cvoyage_rate_usd_24hrgross%2Cvoyage_oh_usd%2Cvoyage_hac_usd%2Cvoyage_bcr_usd%2Cvoyage_cve_usd%2Cvoyage_bnkr_usd%2Cvoyage_bnkr_desc%2Cvoyage_chtr_usd_bal%2Cvoyage_expense_usd%2Cvoyage_expense_desc%2Cvoyage_bnkr_usd_deduc&voyage_date_voyagestart=gte.2025-08-12T00%3A00%3A00&voyage_date_voyagestart=lte.2025-08-17T00%3A00%3A00&voyage_id=eq.250810%2FGMA%2FBBA%2FLSH%2FBNS&order=voyage_date_voyagestart.desc.nullslast&offset=0&limit=2000 "HTTP/2 200 OK"
+2025-10-29 13:45:45 | INFO     | httpx | HTTP Request: GET https://bwbqsflrentugveslfyf.supabase.co/rest/v1/summary?select=voyage_date_voyagestart%2Cvoyage_id%2Cvoyage_duration_days%2Cvoyage_rate_usd_24hrgross%2Cvoyage_oh_usd%2Cvoyage_hac_usd%2Cvoyage_bcr_usd%2Cvoyage_cve_usd%2Cvoyage_bnkr_usd%2Cvoyage_bnkr_desc%2Cvoyage_chtr_usd_bal%2Cvoyage_expense_usd%2Cvoyage_expense_desc%2Cvoyage_bnkr_usd_deduc&voyage_date_voyagestart=gte.2025-10-04T00%3A00%3A00&voyage_date_voyagestart=lte.2025-10-08T00%3A00%3A00&voyage_id=eq.250810%2FGMA%2FBBA%2FLSH%2FBNS&order=voyage_date_voyagestart.desc.nullslast&offset=0&limit=2000 "HTTP/2 200 OK"
+2025-10-29 13:45:45 | INFO     | root | Work completed without errors.
+2025-10-29 13:45:45 | INFO     | root | === Application success ===
+2025-10-29 13:45:51 | INFO     | py4j.clientserver | Closing down clientserver connection
