@@ -8,20 +8,20 @@ requires-python = ">=3.10"
 # Core + your earlier requirements.txt + Jupyter + dotenv
 dependencies = [
   "ipykernel",
-  "jupyter",                # or "notebook" / "jupyterlab" if you prefer
+  "jupyter", # or "notebook" / "jupyterlab" if you prefer
   "numpy",
   "pandas>=2.1.0",
   "matplotlib",
-
   # From our pipeline
   "pyspark>=3.5.0",
   "psycopg[binary]>=3.1.18",
   "openpyxl>=3.1.2",
   "xlwings>=0.30.16",
-
   # .env support
   "python-dotenv>=1.0.0",
-   "supabase>=2.4.0",
+  "supabase>=2.4.0",
+  "azure-identity>=1.25.1",
+  "azure-keyvault-secrets>=4.10.0",
 ]
 
 [tool.uv]
