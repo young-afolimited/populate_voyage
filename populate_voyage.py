@@ -10,11 +10,11 @@ import faulthandler
 from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
-APP_NAME = "update_voyage"  # change me
+APP_NAME = "populate_voyage"  # change me
 
 # --- version banner (bump every build) ---
 APP_NAME = "populate_voyage"
-APP_VERSION = "2025-10-29.01"  # CHANGE THIS every rebuild
+APP_VERSION = "2025-10-30.01"  # CHANGE THIS every rebuild
 
 def log_startup_banner():
     import sys, os, logging, datetime, hashlib
@@ -123,24 +123,6 @@ def _notify_user_failure(message: str):
         # Don’t let notification errors crash the app
         pass
 
-def _notify_user_success():
-    """
-    Optional success toast/dialog for --noconsole builds.
-    Comment out if you don’t want it.
-    """
-    try:
-        if sys.platform.startswith("win"):
-            import ctypes
-            MB_ICONINFORMATION = 0x00000040
-            ctypes.windll.user32.MessageBoxW(
-                None,
-                f"{APP_NAME} completed successfully.\n\nLog: {_log_path()}",
-                f"{APP_NAME} Success",
-                MB_ICONINFORMATION
-            )
-    except Exception:
-        pass
-
 def notify_version():
     import sys
     if sys.platform.startswith("win") and getattr(sys, "frozen", False):
@@ -183,7 +165,7 @@ def main():
     .getOrCreate())
 
 
-    csv_path = os.path.expanduser("~/Documents/populate_voyage/query_params.csv")
+    csv_path = os.path.expanduser("~/Documents/query_params.csv")
 
 
     df = spark.read.csv(str(csv_path), header=False, inferSchema=True)
@@ -557,7 +539,6 @@ if __name__ == "__main__":
         exit_code = main()
         if exit_code == 0:
             logging.info("=== Application success ===")
-            _notify_user_success()
         else:
             logging.error("=== Application finished with errors (exit_code=%s) ===", exit_code)
             _notify_user_failure(f"Exit code: {exit_code}")
